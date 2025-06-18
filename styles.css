@@ -313,6 +313,10 @@ footer {
   h1, h2, h3 {
     font-family: 'Georgia', serif;
   }
+  
+  p {
+    font-family: 'Georgia', serif;
+  }
   .footer-icons {
     justify-content: center;
   }
