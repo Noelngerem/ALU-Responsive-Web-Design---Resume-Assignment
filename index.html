@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">D.E.N</h1>
+      <nav id="navbar">
+        <button id="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text card">
+          <p>
+            I’m Daberechi Emmanuel Ngerem, a Software Engineering undergraduate 
+            at The African Leadership University with a strong passion for AI, cybersecurity, 
+            and systems development. Proficient in C, Python, HTML, CSS and JavaScript.
+            I enjoy building scalable software solutions and exploring machine learning applications.
+            I’m driven by innovation, problem-solving, and the pursuit of cutting-edge technology.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="Images/My Profile Pic.png" alt="profile pic">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box"><img src="images/html logo.png" alt="HTML5 Logo">HTML5</div>
+            <div class="skill-box"><img src="images/css logo.png" alt="CSS Logo">CSS</div>
+            <div class="skill-box"><img src="images/javascript logo.png" alt="JavaScript Logo">JavaScript</div>
+            <div class="skill-box"><img src="images/python.png" alt="Python Logo">Python</div>
+            <div class="skill-box"><img src="images/C logo.png" alt="C Language Logo">C Language</div>
+            <div class="skill-box"><img src="images/uiux logo.png" alt="UI/UX Logo">UI/UX Design</div>
+        </div>
+    </section>
+
+
+
+    <section id="experience" class="section">
+      <h2>Work Experience</h2>
+
+      <div class="card">
+        <h3>Web Developer Intern</h3>
+        <p class="company"><b>Digital Agency</b></p>
+        <p class="date">2024 - Present</p>
+        <ul>
+          <li>Built a responsive e-commerce website using HTML, CSS, and JavaScript</li>
+          <li>Integrated a payment gateway (Stripe/PayPal) to process online transactions securely</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Backend Developer Intern</h3>
+        <p class="company"><b>Fintech Company</b></p>
+        <p class="date">2020 - 2022</p>
+        <ul>
+          <li>Implemented JWT-based authentication and improved security protocols.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Junior Frontend Developer</h3>
+        <p class="company"><b>Tech Solutions Inc.</b></p>
+        <p class="date">2022 - 2024</p>
+        <ul>
+          <li>Led development of multiple web applications using React and modern JavaScript.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <p><b>Bachelor of Software Engineering</b></p>
+        <p class="date">African Leadership University, Currently Enrolled</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="card project">
+        <h3>GPA Calculator Web App</h3>
+        <p>Built a dynamic GPA calculator with real-time results using JavaScript.</p>
+        <button class="modal-btn" data-modal="modal1">View Details</button>
+      </div>
+
+      <div class="card project">
+        <h3>Responsive E-commerce Website</h3>
+        <p>Built a responsive e-commerce website using HTML, CSS, and JavaScript.</p>
+        <button class="modal-btn" data-modal="modal2">View Details</button>
+      </div>
+
+      <div class="card project">
+        <h3>Secure Online Transactions</h3>
+        <p>Integrated a payment gateway (Stripe/PayPal) to process online transactions securely.</p>
+        <button class="modal-btn" data-modal="modal3">View Details</button>
+      </div>
+
+      <div class="card project">
+        <h3>JWT Authentication</h3>
+        <p>Implemented JWT-based authentication and improved security protocols in a production-grade application.</p>
+        <button class="modal-btn" data-modal="modal4">View Details</button>
+      </div>
+
+      <div class="card project">
+        <h3>React Web Applications</h3>
+        <p>Led development of multiple web applications using React and modern JavaScript features.</p>
+        <button class="modal-btn" data-modal="modal5">View Details</button>
+      </div>
+
+      <div class="modal" id="modal1">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>GPA Calculator Web App</h3>
+          <p>This web app allows users to add subjects, input grades, and calculate their GPA dynamically with instant updates and data validation.</p>
+        </div>
+      </div>
+
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Responsive E-commerce Website</h3>
+          <p>Developed a mobile-friendly online store with HTML, CSS, and JavaScript. Features product listings, cart functionality, and intuitive UI.</p>
+        </div>
+      </div>
+
+      <div class="modal" id="modal3">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Secure Online Transactions</h3>
+          <p>Integrated Stripe and PayPal to handle payments safely, with data encryption and user-friendly checkout flow.</p>
+        </div>
+      </div>
+
+      <div class="modal" id="modal4">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>JWT Authentication</h3>
+          <p>Implemented secure login and access control using JWT, featuring token refresh and route protection mechanisms.</p>
+        </div>
+      </div>
+
+      <div class="modal" id="modal5">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>React Web Applications</h3>
+          <p>Developed several SPA projects with React, using reusable components, hooks, and state management best practices.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>e.ngerem@alustudent.com</p>
+    <p>(123) 456-7890</p>
+    <p>African Leaadership University, KGL</p>
+    <p>&copy; 2025 All rights reserved.</p>
+
+    <div class="footer-icons">
+        <a href="#"><img src="Images/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+    </div>
+  </footer>
+</body>
+</html>
