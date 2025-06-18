@@ -2,7 +2,6 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
   document.querySelector('.nav-links').classList.toggle('show');
 });
 
-
 document.querySelectorAll('.modal-btn').forEach((button, index) => {
   button.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal');

@@ -94,9 +94,8 @@ nav {
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -267,17 +266,28 @@ footer {
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: #1a1a1a;
-    width: 100%;
-    display: none;
-    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    background: white;
+    width: 250px;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    display: flex;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
   }
 
   .nav-links.show {
-    display: flex;
+    left: 0;
+  }
+
+  .nav-links a {
+    color: black;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ddd;
   }
 
   #menu-toggle {
@@ -285,8 +295,9 @@ footer {
   }
 
   .container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .skills-container {
@@ -303,47 +314,29 @@ footer {
     margin-top: 0;
     margin-bottom: 20px;
   }
+
   .about-text {
     width: 100%;
   }
+
   body {
     font-family: 'Arial', sans-serif;
   }
 
-  h1, h2, h3 {
-    font-family: 'Georgia', serif;
-  }
-  
-  p {
-    font-family: 'Georgia', serif;
-  }
-  li, a {
-    font-family: 'Georgia', serif;
-  }
-  .company {
+  h1, h2, h3, p, li, a, .company {
     font-family: 'Georgia', serif;
   }
 }
 
 @media (max-width: 500px) {
-
   body {
     font-family: 'Arial', sans-serif;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, p, li, a, .company {
     font-family: 'Georgia', serif;
   }
-  
-  p {
-    font-family: 'Georgia', serif;
-  }
-  li, a {
-    font-family: 'Georgia', serif;
-  }
-  .company {
-    font-family: 'Georgia', serif;
-  }
+
   .footer-icons {
     justify-content: center;
   }
