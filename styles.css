@@ -305,6 +305,14 @@ footer {
 }
 
 @media (max-width: 500px) {
+
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Georgia', serif;
+  }
   .footer-icons {
     justify-content: center;
   }
